@@ -8,4 +8,5 @@ import (
 func Bootstrap(e *echo.Echo) {
 	e.GET("/users", handler.List)
 	e.GET("/users/:name", handler.Get)
+	e.POST("/users", handler.Add)
 }
